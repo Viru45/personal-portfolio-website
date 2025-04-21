@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virendra Kharate - Web Developer | Designer</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="name">Virendra Kharate</h1>
+      <p class="tagline">Web Developer | Designer</p>
+      <nav class="navbar">
+        <a href="#skills">Skills</a>
+        <a href="Blog.html">My Blog</a>
+        <a href="#education">Education</a>
+        <div class="dropdown">
+          <button class="dropbtn">More 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+          </div>
+        </div> 
+      </nav>
+    </div>
+  </header>
+
+
+  <main>
+    <section id="about" class="section">
+      <div class="container">
+          <h2>About Me</h2>
+          <img src="pic.jpg" alt="Virendra's Photo" class="profile-image">
+          <div class="about-container">
+            <div class="about-text">
+              <p><b>Hello! I’m Virendra, a passionate and dedicated web developer with a deep love for creating 
+                innovative and user-friendly websites. With a strong foundation in front-end and back-end technologies, 
+                I thrive on transforming ideas into functional and visually stunning digital experiences. I’m always eager to 
+                learn and stay updated with the latest trends in web development to ensure that the websites I create are not only visually appealing but also fast, secure, and responsive. My approach is driven by attention to detail, collaboration, and a commitment to delivering high-quality results. Whether it’s crafting dynamic websites or solving complex coding challenges, 
+                I’m always ready to take on new projects and push the boundaries of what’s possible on the web.</b></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id ="education" class="education-section">
+      <h2 class="section-title">Education</h2>
+      <p class="section-description">Here are my academic qualifications and achievements:</p>
+      <div class="education-table-container">
+        <table class="education-table">
+          <thead>
+            <tr>
+              <th>Degree</th>
+              <th>Institution</th>
+              <th>Year</th>
+              <th>Percentage/CGPA</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>B.Tech in Information Technology</td>
+              <td>AISSMS IOIT</td>
+              <td>2024 - 2027</td>
+              <td>8.3 CGPA</td>
+              <td>Pursuing</td>
+            </tr>
+            <tr>
+              <td>Diploma in Information Technology</td>
+              <td>Govt. Polytechnic Amravati</td>
+              <td>2021 - 2024</td>
+              <td>92%</td>
+              <td>Completed</td>
+            </tr>
+            <tr>
+              <td>10th Equalification</td>
+              <td>S.V.M Motala</td>
+              <td>2021</td>
+              <td>95%</td>
+              <td>Completed</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    
+    
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <p class="skills-description">A collection of my expertise and technical skills that help me build great web applications.</p>
+        <div class="flex-container">
+          <div class="flex-box">HTML & CSS</div>
+          <div class="flex-box">JavaScript</div>
+          <div class="flex-box">React.js</div>
+          <div class="flex-box">C++</div>
+          <div class="flex-box">Java</div>
+          <div class="flex-box">Python</div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <p><b>Feel free to reach out for collaboration or just to say hi!</b></p>
+        <ul class="contact-info">
+          <li>Email: <a href="mailto:virendrakharate27@gmail.com">virendrakharate27@gmail.com</a></li>
+          <li>Phone: +123-456-7890</li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/feed/">linkedin.com/in/your-profile</a></li>
+          <li>Instagram: <a href="https://www.instagram.com/">instagram.com/in/your-profile</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Virendra Kharate. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollTop" class="scroll-top">↑</button>
+
+  <script>
+    // Scroll to top functionality
+    const scrollTopButton = document.getElementById('scrollTop');
+    window.onscroll = function() {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        scrollTopButton.style.display = "block";
+      } else {
+        scrollTopButton.style.display = "none";
+      }
+    };
+    scrollTopButton.onclick = function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script>
+</body>
+</html>
